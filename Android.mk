@@ -13,11 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(call my-dir),$(call project-path-for,qcom-power))
-
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(call is-vendor-board-platform,QCOM),true)
+#ifeq ($(call is-vendor-board-platform,QCOM),true)
 
 include $(CLEAR_VARS)
 
@@ -168,6 +166,5 @@ LOCAL_VENDOR_MODULE := true
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 include $(BUILD_EXECUTABLE)
 
-endif
+#endif
 
-endif
